@@ -18,7 +18,7 @@ const SeverityAnnotationLevelMap = new Map<RuleSeverity, "warning" | "failure">(
 
 (async () => {
   const ctx = github.context as Context;
-
+  const t = "not used";
   const configFileName = core.getInput("config") || "tslint.json";
   const projectFileName = core.getInput("project");
   const pattern = core.getInput("pattern");
